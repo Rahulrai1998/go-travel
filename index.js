@@ -1,4 +1,4 @@
-// mobile view: show and hide menu
+/*mobile view: show and hide menu*/
 const navMenu = document.getElementById("nav-menu");
 const navToggleBtn = document.getElementById("nav-toggle");
 const navCloseBtn = document.getElementById("nav-close");
@@ -17,3 +17,12 @@ if (navCloseBtn) {
   });
 }
 
+/* mobile view: hide/close menu on any menu-item click */
+const allMenuItems = document.querySelectorAll(".nav-link");
+// console.log(allMenuItems) //NodeList: a.nav-link[]
+
+const linkAction = () => {
+  if (navMenu) navMenu.classList.remove("show-menu");
+};
+
+allMenuItems.forEach((node) => node.addEventListener("click", linkAction));
