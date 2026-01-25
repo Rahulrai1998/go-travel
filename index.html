@@ -13,19 +13,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav-logo">
-          <img src="img/logo.svg" alt="logo image" />
+          <img src="/img/logo.svg" alt="logo image" />
           <span>GoTravel</span>
         </a>
+
         <div class="nav-menu" id="nav-menu">
-            
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- close dropdown-navlist button-->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
         </div>
-        <div class="nav-btns"></div>
+
+        <div class="nav-btns">
+          <!-- theme button -->
+          <i class="ri-moon-fill nav-theme" id="theme-btn"></i>
+          <!-- toggle button -->
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="ri-apps-2-fill"></i>
+          </div>
+        </div>
       </nav>
     </header>
 

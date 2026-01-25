@@ -105,7 +105,7 @@ img {
 
 /* reusable css-classes */
 .container {
-  max-width: 1120px;
+  /* max-width: 1120px; */
   margin-inline: 1.5rem; /*inline-direction means horizontally*/
 }
 
@@ -127,4 +127,103 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+/* header & nav */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  z-index: var(--z-fixed);
+  transition:
+    background-color 0.4s,
+    box-shadow 0.4s;
+}
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
+
+.nav-logo img {
+  transition: filter 0.4s;
+}
+
+.nav-close,
+.nav-toggle,
+.nav-theme {
+  display: inline-flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--white-color);
+  transition: color 0.4s;
+}
+
+.nav-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* navbar: mobile view */
+@media screen and (max-width: 1150px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    padding-block: 4rem;
+    box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    transition: top 0.4s;
+  }
+}
+
+.nav-list {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+/* nav menu list-item underline, with hover-effect */
+.nav-link::after {
+  content: "";
+  width: 0;
+  background-color: var(--title-color);
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  transition: width 0.4s;
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+.nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--title-color);
 }
