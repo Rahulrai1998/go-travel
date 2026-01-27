@@ -14,6 +14,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -77,30 +81,30 @@
             ></a>
           </div>
 
-          <div class="home-swiper">
-            <div>
-              <article class="home-article">
+          <div class="home-swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="home-article swiper-slide">
                 <img
                   src="img/home-img-1.png"
                   alt="swiper image"
                   class="home-img"
                 />
               </article>
-              <article class="home-article">
+              <article class="home-article swiper-slide">
                 <img
                   src="img/home-img-2.png"
                   alt="swiper image"
                   class="home-img"
                 />
               </article>
-              <article class="home-article">
+              <article class="home-article swiper-slide">
                 <img
                   src="img/home-img-3.png"
                   alt="swiper image"
                   class="home-img"
                 />
               </article>
-              <article class="home-article">
+              <article class="home-article swiper-slide">
                 <img
                   src="img/home-img-4.png"
                   alt="swiper image"
@@ -108,6 +112,8 @@
                 />
               </article>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -121,6 +127,7 @@
     <footer class="footer"></footer>
     <!-- scroll-up -->
     <!-- scroll-reveal -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

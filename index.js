@@ -26,3 +26,17 @@ const linkAction = () => {
 };
 
 allMenuItems.forEach((node) => node.addEventListener("click", linkAction));
+
+/* swiper*/
+const swiper = new Swiper(".home-swiper", {
+  loop: true,
+  slidesPreview: "auto",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // autoplay: {
+  //   delay: 1000,
+  //   disableOnInteraction: false,
+  // },
+});

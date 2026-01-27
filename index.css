@@ -285,6 +285,9 @@ img {
   border-radius: 1.5rem;
 }
 
+/* swipper */
+
+
 /* buttons */
 .btn {
   display: inline-flex;
@@ -305,10 +308,10 @@ img {
   transition: transform 0.4s;
 }
 
-.btn:hover i{
+.btn:hover i {
   transform: translateX(0.5rem);
 }
 
-.btn-opa-30{
+.btn-opa-30 {
   background-color: var(--opacity-color-30);
 }
