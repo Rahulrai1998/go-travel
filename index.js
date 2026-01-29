@@ -40,3 +40,13 @@ const swiper = new Swiper(".home-swiper", {
     disableOnInteraction: false,
   },
 });
+
+/*mobile: change header bg on page scroll */
+const onScrollBgHeader = () => {
+  const header = document.getElementById("header");
+  this.scrollY > 50
+    ? header.classList.add("scroll-header-bg")
+    : header.classList.remove("scroll-header-bg");
+};
+
+window.addEventListener("scroll", onScrollBgHeader);

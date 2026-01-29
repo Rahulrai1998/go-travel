@@ -233,6 +233,19 @@ img {
   top: 0;
 }
 
+/* scroll header bg */
+.scroll-header-bg {
+  background-color: var(--body-color);
+  box-shadow: 0 8px 16ps hsla(0, 0%, 0%, 0.1);
+}
+
+.scroll-header-bg :is(.nav-logo, .nav-theme, .nav-toggle) {
+  color: var(--title-color);
+}
+
+.scroll-header-bg img {
+  filter: invert(100%);
+}
 /* home */
 .home {
   position: relative;
