@@ -363,6 +363,7 @@ img {
   position: relative;
   border-radius: 1.5rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .destination-img {
@@ -378,5 +379,35 @@ img {
   background-color: var(--opacity-color-30);
   backdrop-filter: blur(24px);
   color: var(--white-color);
+  display: grid;
+  row-gap: 0.25rem;
   border-radius: 1.5rem;
+  transition: background-color 0.4s;
+}
+
+.destination-subtitle {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+}
+
+.destination-title {
+  font-size: var(--h1-font-size);
+}
+
+.destination-country {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.destination-country i {
+  font-size: 1rem;
+}
+
+.destination-country span {
+  font-size: var(--small-font-size);
+}
+
+.destination-card:hover .destination-img {
+  transform: scale(1.2);
 }
