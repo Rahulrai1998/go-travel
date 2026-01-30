@@ -352,3 +352,31 @@ img {
 .btn-opa-30 {
   background-color: var(--opacity-color-30);
 }
+
+/* destination */
+.destination-container {
+  grid-template-columns: 300px;
+  justify-content: center;
+}
+
+.destination-card {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.destination-img {
+  transition: transform 0.4s;
+}
+
+.destination-data {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--opacity-color-30);
+  backdrop-filter: blur(24px);
+  color: var(--white-color);
+  border-radius: 1.5rem;
+}
